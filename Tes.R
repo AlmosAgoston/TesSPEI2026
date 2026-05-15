@@ -1,3 +1,6 @@
+## install.packages("SPEI")
+library(SPEI)
+
 ## no: 35116 elev: 471.4 latlong: 47.2622 18.0322
 rawTes <- read.table("HABP_1D_20020101_20251231_35116.csv", head = TRUE, sep = ";")
 ## Monthly
