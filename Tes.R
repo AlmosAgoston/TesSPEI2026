@@ -22,14 +22,29 @@ rawTesHon[rawTesHon$rau < -10, "rau"] <- 0
 rawTesHon.ts <- ts(rawTesHon[, -c(1, 2)],start = c(2002, 1), frequency = 12) # make ts
 plot(rawTesHon.ts[,c(1,3)]) # wiew multi-variable ts
 
+spei6 <- spei(rawTesHon.ts[, "BAL"], 6)
+plot(spei6)
+
 spei12 <- spei(rawTesHon.ts[, "BAL"], 12)
 plot(spei12)
+
+spei18 <- spei(rawTesHon.ts[, "BAL"], 18)
+plot(spei18)
 
 spei24 <- spei(rawTesHon.ts[, "BAL"], 24)
 plot(spei24)
 
+spei36 <- spei(rawTesHon.ts[, "BAL"], 36)
+plot(spei36)
+
 spei48 <- spei(rawTesHon.ts[, "BAL"], 48)
 plot(spei48)
 
-spei36 <- spei(rawTesHon.ts[, "BAL"], 36)
-plot(spei36)
+spei60 <- spei(rawTesHon.ts[, "BAL"], 60)
+plot(spei60)
+
+spei72 <- spei(rawTesHon.ts[, "BAL"], 72)
+plot(spei72)
+
+spei84 <- spei(rawTesHon.ts[, "BAL"], 84)
+plot(spei84)
